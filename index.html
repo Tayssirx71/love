@@ -25,12 +25,15 @@
         display: flex;
         align-items: center;
         gap: 40px;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .letter-container {
         background-color: rgba(20, 20, 20, 0.9);
         border: 1px solid #333;
-        padding: 50px;
+        padding: 40px 30px;
         max-width: 600px;
         text-align: center;
         box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
@@ -42,6 +45,8 @@
 
       .photo-container img {
         max-height: 400px;
+        width: 100%;
+        max-width: 300px;
         border-radius: 10px;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
       }
@@ -59,16 +64,35 @@
       }
 
       .letter-container h1 {
-        font-size: 2.5em;
+        font-size: 2.2em;
         margin-bottom: 20px;
         letter-spacing: 2px;
       }
 
       .letter-container p {
-        font-size: 1.4em;
-        line-height: 1.8em;
+        font-size: 1.2em;
+        line-height: 1.7em;
         color: #ccc;
         white-space: pre-line;
+      }
+
+      @media (max-width: 768px) {
+        .content-wrapper {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .letter-container {
+          padding: 30px 20px;
+        }
+
+        .letter-container h1 {
+          font-size: 1.8em;
+        }
+
+        .letter-container p {
+          font-size: 1em;
+        }
       }
     </style>
   </head>
@@ -80,16 +104,16 @@
         <p>
           From the moment you became part of my world, everything became softer,
           sweeter, and somehow more real.<br />
-          You are the calm in my chaos, the warmth in my silence, and the dream
-          I never want to wake up from.<br />
-          No matter how many days pass, I’ll keep choosing you — in every
-          version of time, in every possible world. You’re not just special,
-          you’re everything.<br />
+          You are the calm in my chaos, the warmth in my silence, and the dream I
+          never want to wake up from.<br />
+          No matter how many days pass, I’ll keep choosing you — in every version
+          of time, in every possible world. You’re not just special, you’re
+          everything.<br />
           Still falling for you — Tayssir
         </p>
       </div>
       <div class="photo-container">
-        <img src="cas.jpg" alt="Photo of us or her" />
+        <img src="your-photo.jpg" alt="Photo of us or her" />
       </div>
     </div>
   </body>
